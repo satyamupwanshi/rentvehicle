@@ -5,7 +5,7 @@ function Home () {
     return (
         <>
         <Navbar/>
-        Welcome to Home 
+        Welcome to Home What can I help !
         </>
     ) ;
 }
