@@ -1,0 +1,104 @@
+.van-list-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.van-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Card Design */
+.van-tile {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 280px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.van-tile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  background-color: #fafafa;
+}
+
+.van-tile img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.van-info {
+  padding: 1rem 1.2rem;
+  flex-grow: 1;
+}
+
+.van-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.van-info p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.van-info span {
+  color: #777;
+  font-size: 0.9rem;
+  margin-left: 0.25rem;
+}
+
+/* Van type styling */
+.van-type-wrapper {
+  padding: 0 1.2rem 1.2rem;
+  text-align: center;
+}
+
+.van-type {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: #eee;
+  color: #333;
+  transition: background 0.3s;
+}
+
+/* Optional: type-based color */
+.van-type.simple {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.van-type.rugged {
+  background-color: #ffe0b2;
+  color: #e65100;
+}
+
+.van-type.luxury {
+  background-color: #ede7f6;
+  color: #4527a0;
+}
+
+/* Responsive (optional) */
+@media (max-width: 600px) {
+  .van-tile {
+    width: 100%;
+  }
+}
