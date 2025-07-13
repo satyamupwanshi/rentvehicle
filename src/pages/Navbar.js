@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom';
-import About from './About' ;
 
 function Navbar () {
     return (
