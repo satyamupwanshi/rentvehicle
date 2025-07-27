@@ -1,0 +1,117 @@
+/* Container for the whole section */
+.host-van-detail-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff7ed;
+}
+
+/* Back link styling */
+.back-link {
+  color: #161616;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Card wrapper */
+.host-van-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Top section: image + van info */
+.van-top-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Van image */
+.host-van-detail img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+/* Van info (right side) */
+.van-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Van type badge */
+.van-type-badge {
+  display: inline-block;
+  background-color: #ffead0;
+  color: #4d2600;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  width: fit-content;
+  line-height: 1;
+}
+
+/* Van name */
+.van-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+/* Van price */
+.van-price {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #161616;
+}
+
+/* Outlet section below top info */
+.van-outlet-section {
+  padding-top: 1rem;
+  border-top: 1px solid #e2e2e2;
+}
+
+
+/* Navigation container below van details */
+.host-van-detail-nav {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* Individual nav links */
+.host-van-detail-nav a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.host-van-detail-nav a:hover {
+  color: #161616;
+}
+
+/* Active link styling is handled via inline `style` in React,
+   but you can also define an active class if preferred: */
+.host-van-detail-nav a.active {
+  font-weight: bold;
+  color: #161616;
+  border-bottom: 2px solid #161616;
+}

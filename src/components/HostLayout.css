@@ -1,0 +1,16 @@
+.host-nav {
+    display: flex;
+    gap: 1.5rem;
+    padding:1rem;
+    background-color: #f0f0f0;
+    
+}
+
+.host-nav a {
+    text-decoration: none; /* Removes underline */
+    color: black;           /* Sets text color */
+}
+
+.host-nav a:hover {
+    color: #ff6600;         /* Optional: hover effect */
+}
