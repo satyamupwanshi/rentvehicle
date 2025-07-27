@@ -32,6 +32,9 @@ export default function HostVanDetails() {
     fetchVan()
   }, [id])
 
+  if (loading) return <h2 className="host-van-detail-msg">Loading...</h2>
+  if (error) return <h2 className="host-van-detail-msg error">{error}</h2>
+
   return (
     <section>
     <div className="host-van-detail-container">
